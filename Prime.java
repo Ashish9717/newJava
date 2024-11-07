@@ -1,17 +1,29 @@
+import java.util.*;
 public class Prime {
         public static void main(String[] args) {
-                int n = 87;
-                for(int i = 2 ; i <= n-1 ; i++){
+                Scanner sc = new Scanner(System.in);
+                
+                int n = sc.nextInt();
+                if(n == 2){
+                    System.out.println("N is Prime");
+                }else{
+                    boolean isPrime = true ;
+                for(int i = 2 ; i <= n/2; i++){
                     if( n % i ==0){
-                        System.out.println("Number is non Prime");
-                        break;
+                       isPrime = false;
+                    
+                    }
+                    }
+                    if(isPrime == true){
+                        System.out.println("N is Prime");
                     }else{
-                        System.out.println("Number is prime");
-                        break;
+                        System.out.println("N is not prime");
                     }
                 }
-                System.out.println();
+                
+                }
+               
         }
 
         
-}
+
