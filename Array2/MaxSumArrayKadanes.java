@@ -12,9 +12,7 @@ public class MaxSumArrayKadanes {
                         if(currentSum < 0){
                                 currentSum = 0;
                         }
-                        if(currentSum > maxSum){
-                                maxSum = currentSum ;
-                }
+                        maxSum = Math.max(currentSum , maxSum);
                 }
                 System.out.println("Max Sum : "+maxSum);
         }
