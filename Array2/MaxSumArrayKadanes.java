@@ -9,15 +9,16 @@ public class MaxSumArrayKadanes {
 
                 for(int i = 0 ; i< size ; i++){
                         currentSum += num[i];
+                        maxSum = Math.max(currentSum , maxSum);
                         if(currentSum < 0){
                                 currentSum = 0;
                         }
-                        maxSum = Math.max(currentSum , maxSum);
+                        // maxSum = Math.max(currentSum , maxSum);
                 }
                 System.out.println("Max Sum : "+maxSum);
         }
         public static void main(String[] args) {
-                int num[] = {-2,-3,4,-1,-2,1,5,-3};
+                int num[] = {-1};
                 Maximum_SumOfSubArray(num);
         }
         
