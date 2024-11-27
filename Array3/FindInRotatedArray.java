@@ -8,7 +8,7 @@ public class FindInRotatedArray {
                         int mid = left + (right - left) / 2 ; 
                         if(num[mid] == target){
                                 return mid;
-                        }else if( num[mid-1] > num[mid+1]  && target < num[mid]){
+                        }else if( num[mid-1] > num[mid+1]  && target < num[mid] ) {
                                 left = mid+1;
                         }else{
                                 right = mid-1;
@@ -18,7 +18,7 @@ public class FindInRotatedArray {
         }
         public static void main(String[] args) {
                 int num [] = {4,5,6,7,0,1,2};
-                int target = 1;
+                int target = 2;
                 System.out.println(FindElement_InRotatedArray(num, target));
         }
         
