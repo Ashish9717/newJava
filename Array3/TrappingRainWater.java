@@ -1,5 +1,4 @@
 package Array3;
-import java.util.*;
 
 public class TrappingRainWater {
         public static int Trapping_Rain_Water(int height[]){
