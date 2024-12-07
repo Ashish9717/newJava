@@ -6,6 +6,7 @@ public class AreaCirclr {
                         float a = 3.14f ;
                         float ans = a *(r*r);
                         System.out.println(ans);
+                       
                 sc.close();
         
         }
