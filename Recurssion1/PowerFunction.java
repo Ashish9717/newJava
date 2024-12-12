@@ -6,11 +6,11 @@ public class PowerFunction {
                         return 1;
                 }
                 int pow = Power(x, n/2);
-                int Pow = pow * pow;
+                int Pro = pow * pow;
                 if(n % 2 != 0){
-                        Pow = x * Pow;
+                        Pro *= x ;
                 }
-                return Pow;
+                return Pro;
                
         }
         public static void main(String[] args) {
